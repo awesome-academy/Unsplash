@@ -9,5 +9,4 @@ target 'Unsplash' do
 
   #convention
   pod 'SwiftLint'
-
 end
