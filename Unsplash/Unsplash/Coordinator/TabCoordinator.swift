@@ -35,7 +35,6 @@ final class TabCoordinator: Coordinator {
             storeCoordinator.navigationController
         ]
 
-        tabBarController.tabBar.isTranslucent = false
         tabBarController.display(on: rootViewController)
     }
 }

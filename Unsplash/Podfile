@@ -9,4 +9,5 @@ target 'Unsplash' do
 
   #convention
   pod 'SwiftLint'
+  pod 'Kingfisher', '~> 4.0'
 end

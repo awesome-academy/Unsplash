@@ -8,21 +8,43 @@
     </dependencies>
     <scenes>
         <!--Home-->
-        <scene sceneID="1GC-QR-hs5">
+        <scene sceneID="l3H-Hn-rrF">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="9ZF-ad-fA5" customClass="HomeViewController" customModule="Unsplash" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sju-Jt-4X1">
+                <viewController storyboardIdentifier="HomeViewController" id="Hao-Ks-azW" customClass="HomeViewController" customModule="UnsplashTestTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEE-cP-42n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l3j-rK-FJx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M1i-yH-oas">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="0t0-qB-ns8"/>
+                        <constraints>
+                            <constraint firstItem="l3j-rK-FJx" firstAttribute="top" secondItem="yXl-ab-7q2" secondAttribute="top" id="ZP0-tC-v7L"/>
+                            <constraint firstItem="l3j-rK-FJx" firstAttribute="leading" secondItem="yXl-ab-7q2" secondAttribute="leading" id="ZgN-SX-zAM"/>
+                            <constraint firstItem="l3j-rK-FJx" firstAttribute="trailing" secondItem="yXl-ab-7q2" secondAttribute="trailing" id="spc-Za-PHD"/>
+                            <constraint firstItem="l3j-rK-FJx" firstAttribute="bottom" secondItem="yXl-ab-7q2" secondAttribute="bottom" id="vI9-IT-HF7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yXl-ab-7q2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_sellected" id="h86-5v-coQ"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_sellected" id="vr9-Hd-pOm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="homeCollectionView" destination="l3j-rK-FJx" id="Nfz-EK-G8I"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="unE-1o-N9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUl-Pg-lZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99" y="42"/>
+            <point key="canvasLocation" x="-200" y="-62"/>
         </scene>
     </scenes>
     <resources>
