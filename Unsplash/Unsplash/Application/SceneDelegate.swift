@@ -11,9 +11,15 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var tabCoordinator: TabCoordinator?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+       guard let scene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: scene)
+        let rootViewController = RootViewController.instantiate()
+        window?.rootViewController = rootViewController
+        tabCoordinator = TabCoordinator(rootViewController: rootViewController)
+        tabCoordinator?.start()
+        window?.makeKeyAndVisible()
     }
 
 }
