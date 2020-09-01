@@ -9,6 +9,7 @@
 import UIKit
 import Network
 protocol HomeViewControllerDelegate: class {
+    func getPhotoInCollection(_ photoCollection: PhotoCollection)
 }
 
 final class HomeViewController: UIViewController {
@@ -196,8 +197,8 @@ extension HomeViewController: NetworkDelegate {
 // MARK: header did sellected
 extension HomeViewController: HeaderCollectionViewDelegate {
     func collectionViewDidSelectedAt(index: Int) {
-        // go collection detail
-        print("sellected index \(index)")
+        let collectionSellected = viewModel.photoCollections[index]
+        delegate?.getPhotoInCollection(collectionSellected)
     }
 }
 

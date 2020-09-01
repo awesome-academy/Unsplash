@@ -10,9 +10,9 @@ import Foundation
 
 struct Photo: Codable {
     var id: String = ""
-    var color: String = "#ffffff"
-    var width: Int = 0
-    var height: Int = 0
+    var color: String? = "#ffffff"
+    var width: Int? = 0
+    var height: Int? = 0
     let urls: ImageURLs?
     let collectionsItBelongs: [PhotoCollection]?
     let links: Links?

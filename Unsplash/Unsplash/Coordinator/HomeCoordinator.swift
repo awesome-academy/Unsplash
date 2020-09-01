@@ -26,4 +26,11 @@ final class HomeCoordinator: Coordinator {
 
 extension HomeCoordinator: HomeViewControllerDelegate {
     
+    func getPhotoInCollection(_ photoCollection: PhotoCollection) {
+        let detailCollectionCoordinator = DetailPhotoCollectionCoordinator(navigationController: navigationController, photoCollection: photoCollection)
+        chilCoordinstors.append(detailCollectionCoordinator)
+        detailCollectionCoordinator.parentCoordinator = self
+        detailCollectionCoordinator.start()
+    }
+
 }
