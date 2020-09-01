@@ -10,4 +10,6 @@ target 'Unsplash' do
   #convention
   pod 'SwiftLint'
   pod 'Kingfisher', '~> 4.0'
+  pod 'RealmSwift'
+  pod 'imglyKit2', '~> 1.1' # Swift 5
 end

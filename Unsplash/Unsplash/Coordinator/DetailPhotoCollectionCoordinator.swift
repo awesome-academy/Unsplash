@@ -29,7 +29,16 @@ final class DetailPhotoCollectionCoordinator: Coordinator {
 }
 
 extension DetailPhotoCollectionCoordinator: DetailCollectionDelegate {
-    func viewDidDisappear() {
-        parentCoordinator?.childDidFinish(self)
+    func selectedImage(photo: Photo) {
+        let detailPhotoCoordinator = DetailPhotoCoordinator(navigationController: navigationController, photo: photo)
+        chilCoordinstors.append(detailPhotoCoordinator)
+        detailPhotoCoordinator.parentCoordinator = self
+        detailPhotoCoordinator.start()
+    }
+    
+    func viewDidDisappear(_ viewController: UIViewController) {
+        if !navigationController.viewControllers.contains(viewController) {
+            parentCoordinator?.childDidFinish(self)
+        }
     }
 }
