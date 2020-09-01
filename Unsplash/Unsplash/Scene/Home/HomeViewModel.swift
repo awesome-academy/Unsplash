@@ -27,11 +27,15 @@ final class HomeViewModel {
             case .success(let photos):
                 self?.photos.append(contentsOf: photos)
                 photos.forEach { photo in
-                    if let imageUrl = photo.urls?.regular {
+                    if let imageUrl = photo.urls?.regular,
+                        let imageHeight = photo.height,
+                        let imageWidth = photo.width,
+                        let color = photo.color {
+                    
                     let cellViewModel = CellViewModel(imagePath: imageUrl,
-                                                      imageHeight: photo.height,
-                                                      imageWidth: photo.width,
-                                                      backgroundColor: photo.color)
+                                                      imageHeight: imageHeight,
+                                                      imageWidth: imageWidth,
+                                                      backgroundColor: color)
                     self?.photoCellViewModel.append(cellViewModel)
                     }
                 }

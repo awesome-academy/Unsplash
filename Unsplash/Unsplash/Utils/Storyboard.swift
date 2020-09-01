@@ -14,5 +14,6 @@ enum Storyboard {
         static let Store = "Store"
         static let Root = "Root"
         static let Tabbar = "Tabbar"
+        static let DetailCollectionPhoto = "DetailPhotoCollection"
     }
 }
