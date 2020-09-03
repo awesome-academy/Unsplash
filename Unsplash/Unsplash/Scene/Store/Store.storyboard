@@ -8,21 +8,36 @@
     </dependencies>
     <scenes>
         <!--Store-->
-        <scene sceneID="aTR-jL-AXt">
+        <scene sceneID="QeL-pm-9B0">
             <objects>
-                <viewController storyboardIdentifier="StoreViewController" id="jrC-sd-h8c" customClass="StoreViewController" customModule="Unsplash" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2AE-3T-LNP">
+                <viewController storyboardIdentifier="StoreViewController" id="F4o-SA-IM8" customClass="StoreViewController" customModule="UnsplashTestTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4y-yd-9t9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrV-ov-Eil">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="dQE-u1-swQ"/>
+                        <constraints>
+                            <constraint firstItem="HrV-ov-Eil" firstAttribute="bottom" secondItem="cP9-cy-tlh" secondAttribute="bottom" id="OA9-cW-lCO"/>
+                            <constraint firstItem="HrV-ov-Eil" firstAttribute="trailing" secondItem="cP9-cy-tlh" secondAttribute="trailing" id="gWI-dL-0RQ"/>
+                            <constraint firstItem="HrV-ov-Eil" firstAttribute="top" secondItem="cP9-cy-tlh" secondAttribute="top" id="x6C-xu-T6f"/>
+                            <constraint firstItem="HrV-ov-Eil" firstAttribute="leading" secondItem="cP9-cy-tlh" secondAttribute="leading" id="yBT-Y2-bgp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cP9-cy-tlh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Store" image="store" selectedImage="store_sellected" id="NkW-1I-tmT"/>
+                    <tabBarItem key="tabBarItem" title="Store" image="store" selectedImage="store_sellected" id="vFS-X6-xRa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="HrV-ov-Eil" id="v6D-cd-pMO"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Hc-tM-8Bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uai-Gh-Yk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="18"/>
+            <point key="canvasLocation" x="-354" y="-5"/>
         </scene>
     </scenes>
     <resources>

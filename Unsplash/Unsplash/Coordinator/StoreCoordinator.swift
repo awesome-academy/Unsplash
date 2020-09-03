@@ -7,10 +7,11 @@
 //
 
 import UIKit
+
 final class StoreCoordinator: Coordinator {
     var chilCoordinstors: [Coordinator] = []
     var navigationController: UINavigationController
-
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -21,8 +22,16 @@ final class StoreCoordinator: Coordinator {
         }
         storeViewController.delegate = self
         navigationController.pushViewController(storeViewController, animated: false)
+
     }
 }
 
 extension StoreCoordinator: StoreViewControllerDelegate {
+    func selectedPhoto(photo: Photo) {
+        let detailPhotoCoordinator = DetailPhotoCoordinator(navigationController: navigationController,
+                                                            photo: photo)
+        detailPhotoCoordinator.parentCoordinator = self
+        chilCoordinstors.append(detailPhotoCoordinator)
+        detailPhotoCoordinator.start()
+    }
 }
