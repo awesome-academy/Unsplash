@@ -182,7 +182,6 @@ class DetailPhotoViewController: UIViewController {
     
     // MARK: editor result
     func editorCompletionBlock(result: IMGLYEditorResult, image: UIImage?) {
-        print("result")
         switch result {
         case .done:
             if let image = image {

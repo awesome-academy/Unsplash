@@ -54,7 +54,6 @@ class DetailPhotoCollectionVC: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        // detail collection viewcontroller was pop up
         delegate?.viewDidDisappear(self)
     }
 }

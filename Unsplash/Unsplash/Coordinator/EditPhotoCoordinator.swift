@@ -27,6 +27,6 @@ final class EditPhotoCoordinator: Coordinator {
         editorViewController.initialFilterType = .none
         editorViewController.initialFilterIntensity = 0.5
         editorViewController.completionBlock = editorCompletionBlock
-        navigationController.pushViewController(editorViewController, animated: false)
+        navigationController.pushViewController(editorViewController, animated: true)
     }
 }

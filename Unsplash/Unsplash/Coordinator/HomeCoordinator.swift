@@ -25,7 +25,13 @@ final class HomeCoordinator: Coordinator {
 }
 
 extension HomeCoordinator: HomeViewControllerDelegate {
-    
+    func startSearch() {
+        let searchCoordinator = SearchCoordinator(navigationController: navigationController)
+        searchCoordinator.parentCoordinator = self
+        chilCoordinstors.append(searchCoordinator)
+        searchCoordinator.start()
+    }
+
     func getAPhoto(photo: Photo) {
         let detailPhotoCoordinator = DetailPhotoCoordinator(navigationController: navigationController, photo: photo)
         chilCoordinstors.append(detailPhotoCoordinator)
