@@ -30,7 +30,6 @@ class DetailPhotoCollectionVC: UIViewController {
         photoCollectionView.view.frame = containerView.bounds
         photoCollectionView.delegate = self
         
-        tabBarController?.tabBar.isHidden = true
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.backgroundColor = .white
         navigationController?.navigationBar.tintColor = .black
@@ -51,7 +50,11 @@ class DetailPhotoCollectionVC: UIViewController {
             }
         }
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = true
+    }
+
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         delegate?.viewDidDisappear(self)
