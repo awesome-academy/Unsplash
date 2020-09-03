@@ -22,6 +22,11 @@
 		1956624924FE04B100731A09 /* DetailPhotoCollectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956624824FE04B100731A09 /* DetailPhotoCollectionCoordinator.swift */; };
 		1956624C24FE06D400731A09 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956624A24FE06D400731A09 /* BaseCollectionView.swift */; };
 		1956624D24FE06D400731A09 /* BaseCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1956624B24FE06D400731A09 /* BaseCollectionView.xib */; };
+		195AC17D2500C4160005A8E5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195AC17C2500C4160005A8E5 /* Search.storyboard */; };
+		195AC17F2500C4230005A8E5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AC17E2500C4230005A8E5 /* SearchViewController.swift */; };
+		195AC1812500C5130005A8E5 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AC1802500C5130005A8E5 /* Search.swift */; };
+		195AC1832500C53F0005A8E5 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AC1822500C53F0005A8E5 /* SearchCoordinator.swift */; };
+		195AC1852500C5B20005A8E5 /* SearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AC1842500C5B20005A8E5 /* SearchHistory.swift */; };
 		196B37A124F8A8EB004548A3 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B37A024F8A8EB004548A3 /* Storyboard.swift */; };
 		197D58AB24FCD4DF009C6974 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D58AA24FCD4DF009C6974 /* UIColor+.swift */; };
 		197D58AD24FCD5DA009C6974 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D58AC24FCD5DA009C6974 /* HomeViewModel.swift */; };
@@ -82,6 +87,11 @@
 		1956624824FE04B100731A09 /* DetailPhotoCollectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCollectionCoordinator.swift; sourceTree = "<group>"; };
 		1956624A24FE06D400731A09 /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		1956624B24FE06D400731A09 /* BaseCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCollectionView.xib; sourceTree = "<group>"; };
+		195AC17C2500C4160005A8E5 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		195AC17E2500C4230005A8E5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		195AC1802500C5130005A8E5 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		195AC1822500C53F0005A8E5 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		195AC1842500C5B20005A8E5 /* SearchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
 		196B37A024F8A8EB004548A3 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		197D58AA24FCD4DF009C6974 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		197D58AC24FCD5DA009C6974 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +189,15 @@
 			path = DetailPhotoCollecton;
 			sourceTree = "<group>";
 		};
+		195AC17B2500C3DC0005A8E5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				195AC17C2500C4160005A8E5 /* Search.storyboard */,
+				195AC17E2500C4230005A8E5 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		196B379F24F8A8D7004548A3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +249,8 @@
 				197D58C624FCD7F5009C6974 /* Links.swift */,
 				197D58C824FCD818009C6974 /* ImageURLs.swift */,
 				19052CF924FE2F9C00CDB86D /* Store.swift */,
+				195AC1802500C5130005A8E5 /* Search.swift */,
+				195AC1842500C5B20005A8E5 /* SearchHistory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,6 +304,7 @@
 				1956624824FE04B100731A09 /* DetailPhotoCollectionCoordinator.swift */,
 				19052CFB24FE31EE00CDB86D /* DetailPhotoCoordinator.swift */,
 				19BC618725008EFE00463EBC /* EditPhotoCoordinator.swift */,
+				195AC1822500C53F0005A8E5 /* SearchCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -290,6 +312,7 @@
 		19CE099D24F5054700FD21EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				195AC17B2500C3DC0005A8E5 /* Search */,
 				19052CEF24FE2E3400CDB86D /* DetailPhoto */,
 				1956624124FE035600731A09 /* DetailPhotoCollecton */,
 				19CE099F24F5055900FD21EE /* Tabbar */,
@@ -488,6 +511,7 @@
 				19E3113C24EA5390007ACCB8 /* Assets.xcassets in Resources */,
 				19CE09A424F5059400FD21EE /* Root.storyboard in Resources */,
 				19CE09B424F506D800FD21EE /* Home.storyboard in Resources */,
+				195AC17D2500C4160005A8E5 /* Search.storyboard in Resources */,
 				19052CF124FE2E4900CDB86D /* DetailPhoto.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +593,7 @@
 				197D58D524FCD8E8009C6974 /* Order.swift in Sources */,
 				19CE09A624F5059F00FD21EE /* RootViewController.swift in Sources */,
 				197D58E424FCDA16009C6974 /* CollectionsRequest.swift in Sources */,
+				195AC1812500C5130005A8E5 /* Search.swift in Sources */,
 				19BC618825008EFE00463EBC /* EditPhotoCoordinator.swift in Sources */,
 				196B37A124F8A8EB004548A3 /* Storyboard.swift in Sources */,
 				1956624924FE04B100731A09 /* DetailPhotoCollectionCoordinator.swift in Sources */,
@@ -586,8 +611,10 @@
 				197D58B724FCD6AA009C6974 /* CellViewModel.swift in Sources */,
 				19052CFC24FE31EE00CDB86D /* DetailPhotoCoordinator.swift in Sources */,
 				19052CF324FE2E6200CDB86D /* DetailPhotoViewController.swift in Sources */,
+				195AC1832500C53F0005A8E5 /* SearchCoordinator.swift in Sources */,
 				197D58BE24FCD744009C6974 /* HeaderViewModel.swift in Sources */,
 				197D58DE24FCD999009C6974 /* BaseRepository.swift in Sources */,
+				195AC1852500C5B20005A8E5 /* SearchHistory.swift in Sources */,
 				1956624724FE03CA00731A09 /* DetailCollectionViewModel.swift in Sources */,
 				197D58E224FCD9EB009C6974 /* CollectionsRepositories.swift in Sources */,
 				197D58B424FCD67D009C6974 /* PhotoCollectionCell.swift in Sources */,
@@ -595,6 +622,7 @@
 				197D58AB24FCD4DF009C6974 /* UIColor+.swift in Sources */,
 				197D58D724FCD901009C6974 /* NetworkStatus.swift in Sources */,
 				197D58C524FCD7E0009C6974 /* PhotoCollection.swift in Sources */,
+				195AC17F2500C4230005A8E5 /* SearchViewController.swift in Sources */,
 				197D58E024FCD9C0009C6974 /* PhotoRepositories.swift in Sources */,
 				197D58D924FCD946009C6974 /* URLs.swift in Sources */,
 				197D58AF24FCD638009C6974 /* NetworkManager.swift in Sources */,

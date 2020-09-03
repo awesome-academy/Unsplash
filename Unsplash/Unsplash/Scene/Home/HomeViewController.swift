@@ -11,6 +11,7 @@ import Network
 protocol HomeViewControllerDelegate: class {
     func getPhotoInCollection(_ photoCollection: PhotoCollection)
     func getAPhoto(photo: Photo)
+    func startSearch()
 }
 
 final class HomeViewController: UIViewController {
@@ -100,7 +101,7 @@ final class HomeViewController: UIViewController {
     }
 
     @objc func startSearch() {
-        // start search
+       delegate?.startSearch()
     }
 }
 
