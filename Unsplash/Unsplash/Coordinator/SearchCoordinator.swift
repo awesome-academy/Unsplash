@@ -34,5 +34,9 @@ extension SearchCoordinator: SearchViewControllerDelegate {
     }
     
     func searchAction(searchKey: String) {
+        let detailSearchCoordinator = DetailSearchCoordinator(navigationController: navigationController, searchKey: searchKey)
+        detailSearchCoordinator.parentCoordinator = self
+        chilCoordinstors.append(detailSearchCoordinator)
+        detailSearchCoordinator.start()
     }
 }

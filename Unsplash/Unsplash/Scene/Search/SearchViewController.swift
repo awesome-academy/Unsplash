@@ -76,6 +76,10 @@ extension SearchViewController: UISearchBarDelegate {
             return
         }
         
+        if searchKey.isEmpty {
+            return
+        }
+        
         guard let isContaintKey = history?.contains(where: { searchHistory -> Bool in
             return searchHistory.searchKey == searchKey
         }) else {
