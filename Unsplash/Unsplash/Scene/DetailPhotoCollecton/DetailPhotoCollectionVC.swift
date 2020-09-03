@@ -8,7 +8,8 @@
 
 import UIKit
 protocol DetailCollectionDelegate: class {
-    func viewDidDisappear()
+    func viewDidDisappear(_ viewController: UIViewController)
+    func selectedImage(photo: Photo)
 }
 
 class DetailPhotoCollectionVC: UIViewController {
@@ -53,13 +54,14 @@ class DetailPhotoCollectionVC: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        delegate?.viewDidDisappear()
+        // detail collection viewcontroller was pop up
+        delegate?.viewDidDisappear(self)
     }
 }
 
 extension DetailPhotoCollectionVC: BaseCollectionViewDelegate {
     func didSelectedAt(index: Int) {
-        // go to detail photo view
+        delegate?.selectedImage(photo: viewModel.photos[index])
     }
 
     func loadMore() {

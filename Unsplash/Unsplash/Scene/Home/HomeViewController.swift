@@ -10,6 +10,7 @@ import UIKit
 import Network
 protocol HomeViewControllerDelegate: class {
     func getPhotoInCollection(_ photoCollection: PhotoCollection)
+    func getAPhoto(photo: Photo)
 }
 
 final class HomeViewController: UIViewController {
@@ -205,7 +206,7 @@ extension HomeViewController: HeaderCollectionViewDelegate {
 // MARK: get a photo
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // go photo detail
+        delegate?.getAPhoto(photo: viewModel.photos[indexPath.row])
     }
 }
 
