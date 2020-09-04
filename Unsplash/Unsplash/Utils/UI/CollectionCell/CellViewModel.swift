@@ -10,7 +10,7 @@ import UIKit
 
 struct CellViewModel {
     var imagePath: URL
-    var label: String? = ""
+    var label: String?
     var imageHeight: Int? = 0
     var imageWidth: Int? = 0
     var backgroundColor: String? = ""
