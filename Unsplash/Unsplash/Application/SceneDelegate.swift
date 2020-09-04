@@ -9,16 +9,14 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-    var tabCoordinator: TabCoordinator?
+    var splashCoordinator: SplashScreenCoordinator?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        guard let scene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: scene)
-        let rootViewController = RootViewController.instantiate()
-        window?.rootViewController = rootViewController
-        tabCoordinator = TabCoordinator(rootViewController: rootViewController)
-        tabCoordinator?.start()
+        splashCoordinator = SplashScreenCoordinator(navigationController: UINavigationController())
+        splashCoordinator?.start()
+        window?.rootViewController = splashCoordinator?.navigationController
         window?.makeKeyAndVisible()
     }
 

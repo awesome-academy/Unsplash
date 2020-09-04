@@ -16,6 +16,7 @@
 		19052CFC24FE31EE00CDB86D /* DetailPhotoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19052CFB24FE31EE00CDB86D /* DetailPhotoCoordinator.swift */; };
 		192BA2FF24F55189003240DF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192BA2FE24F55189003240DF /* HomeCoordinator.swift */; };
 		192BA30124F55190003240DF /* StoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192BA30024F55190003240DF /* StoreCoordinator.swift */; };
+		194D42F225020DEB009EF0A9 /* SplashScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D42F125020DEB009EF0A9 /* SplashScreenCoordinator.swift */; };
 		1956624324FE038900731A09 /* DetailPhotoCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1956624224FE038900731A09 /* DetailPhotoCollection.storyboard */; };
 		1956624524FE039800731A09 /* DetailPhotoCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956624424FE039800731A09 /* DetailPhotoCollectionVC.swift */; };
 		1956624724FE03CA00731A09 /* DetailCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1956624624FE03CA00731A09 /* DetailCollectionViewModel.swift */; };
@@ -71,6 +72,8 @@
 		19CE09B424F506D800FD21EE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CE09B324F506D800FD21EE /* Home.storyboard */; };
 		19CE09B624F506EC00FD21EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE09B524F506EC00FD21EE /* HomeViewController.swift */; };
 		19CE09B924F5079C00FD21EE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE09B824F5079C00FD21EE /* UIViewController+.swift */; };
+		19E043242501F1E000844242 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E043232501F1E000844242 /* Splash.storyboard */; };
+		19E043262501F1F200844242 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E043252501F1F200844242 /* SplashViewController.swift */; };
 		19E3113324EA538F007ACCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E3113224EA538F007ACCB8 /* AppDelegate.swift */; };
 		19E3113524EA538F007ACCB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E3113424EA538F007ACCB8 /* SceneDelegate.swift */; };
 		19E3113C24EA5390007ACCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E3113B24EA5390007ACCB8 /* Assets.xcassets */; };
@@ -88,6 +91,7 @@
 		19052CFB24FE31EE00CDB86D /* DetailPhotoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCoordinator.swift; sourceTree = "<group>"; };
 		192BA2FE24F55189003240DF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		192BA30024F55190003240DF /* StoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCoordinator.swift; sourceTree = "<group>"; };
+		194D42F125020DEB009EF0A9 /* SplashScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenCoordinator.swift; sourceTree = "<group>"; };
 		1956624224FE038900731A09 /* DetailPhotoCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailPhotoCollection.storyboard; sourceTree = "<group>"; };
 		1956624424FE039800731A09 /* DetailPhotoCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCollectionVC.swift; sourceTree = "<group>"; };
 		1956624624FE03CA00731A09 /* DetailCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		19CE09B324F506D800FD21EE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		19CE09B524F506EC00FD21EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19CE09B824F5079C00FD21EE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		19E043232501F1E000844242 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		19E043252501F1F200844242 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		19E3112F24EA538F007ACCB8 /* Unsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E3113224EA538F007ACCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E3113424EA538F007ACCB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -332,6 +338,7 @@
 				19BC618725008EFE00463EBC /* EditPhotoCoordinator.swift */,
 				195AC1822500C53F0005A8E5 /* SearchCoordinator.swift */,
 				195AC1992500E00F0005A8E5 /* DetailSearchCoordinator.swift */,
+				194D42F125020DEB009EF0A9 /* SplashScreenCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 		19CE099D24F5054700FD21EE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				19E043222501F1D400844242 /* Splash */,
 				195AC18E2500DEC10005A8E5 /* DetailSearch */,
 				195AC17B2500C3DC0005A8E5 /* Search */,
 				19052CEF24FE2E3400CDB86D /* DetailPhoto */,
@@ -396,6 +404,15 @@
 				197D58AA24FCD4DF009C6974 /* UIColor+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19E043222501F1D400844242 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				19E043232501F1E000844242 /* Splash.storyboard */,
+				19E043252501F1F200844242 /* SplashViewController.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		19E3112624EA538F007ACCB8 = {
@@ -543,6 +560,7 @@
 				19CE09B424F506D800FD21EE /* Home.storyboard in Resources */,
 				195AC17D2500C4160005A8E5 /* Search.storyboard in Resources */,
 				19052CF124FE2E4900CDB86D /* DetailPhoto.storyboard in Resources */,
+				19E043242501F1E000844242 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +649,7 @@
 				19CE09AA24F5061300FD21EE /* MainTabBarViewController.swift in Sources */,
 				197D58C024FCD791009C6974 /* CustomLayout.swift in Sources */,
 				197D58C724FCD7F5009C6974 /* Links.swift in Sources */,
+				194D42F225020DEB009EF0A9 /* SplashScreenCoordinator.swift in Sources */,
 				1956624C24FE06D400731A09 /* BaseCollectionView.swift in Sources */,
 				19CE09B624F506EC00FD21EE /* HomeViewController.swift in Sources */,
 				19E3113324EA538F007ACCB8 /* AppDelegate.swift in Sources */,
@@ -660,6 +679,7 @@
 				197D58E024FCD9C0009C6974 /* PhotoRepositories.swift in Sources */,
 				197D58D924FCD946009C6974 /* URLs.swift in Sources */,
 				195AC1922500DF060005A8E5 /* DetailSearchViewController.swift in Sources */,
+				19E043262501F1F200844242 /* SplashViewController.swift in Sources */,
 				197D58AF24FCD638009C6974 /* NetworkManager.swift in Sources */,
 				19052CFA24FE2F9C00CDB86D /* Store.swift in Sources */,
 				192BA30124F55190003240DF /* StoreCoordinator.swift in Sources */,
